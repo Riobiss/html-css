@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+body {
+  background-attachment: fixed;
+height: 100%;
+}
+
+a {
+  padding: 20px;
+  text-align: center;
+}

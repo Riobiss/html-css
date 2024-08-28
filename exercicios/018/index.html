@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box level e inline box</title>
+<!-- se quiser transformar um inline box pra level é so usar o seletor display:inline ou block para virar um box -->
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: lightgrey;
+    }
+
+    h1 {
+      height: 300px;
+      width: 300px;
+      border-width: 10px;
+      border-color: blue;
+      border-style: solid;
+      background-color: green;
+
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+
+      margin-top: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+
+      outline-width: 5px;
+      outline-color: purple;
+      outline-style: dashed;
+    }
+
+    h2 {
+      height: 300px;
+      width: 300px;
+      border-width: 10px;
+      border-color: blue;
+      border-style: solid;
+      background-color: green;
+
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+
+      margin: auto;
+    }
+
+    h3 {
+      height: 300px;
+      width: 300px;
+      border: 10px solid black;
+      background-color: green;
+
+      padding: 10px;
+
+      margin: 10px 10px 10px 10px;
+
+      outline: 10px dashed purple;
+    }
+
+    a {
+      border: 10px solid rgb(90, 8, 8);
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      background-color: red;
+      text-decoration: none;
+    }
+
+    h3#primeiro {
+      height: 300px;
+      width: 300px;
+      border: 10px solid black;
+      background-color: green;
+
+      padding: 10px 20px;
+
+      margin: 30px 20px 30px;
+
+      outline: 10px 40px dashed purple;
+    }
+
+    h3#segundo {
+      height: 300px;
+      width: 300px;
+      border: 10px solid black;
+      background-color: green;
+
+      padding: 10px 20px;
+
+      margin: 30px 10px 10px 10px;
+
+      outline: 10px 40px dashed purple;
+    }
+
+    h3#terceiro {
+      height: 300px;
+      width: 300px;
+      border: 10px solid black;
+      background-color: green;
+
+      padding: 10px 20px;
+
+      margin: 30px auto 10px auto;
+
+      outline: 10px 40px dashed purple;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>H1 é um exemplo de box level</h1>
+  <h2>H2 também é um exemplo de box level</h2>
+  <h3>H3 também é um exemplo de box level</h3>
+  <h3 id="primeiro">Outras formas</h3>
+  <h3 id="segundo">Repetindo pra testar</h3>
+  <h3 id="terceiro">Rapaz</h3>
+  <p>um parágrafo também é um exemplo de box level</p>
+  <a href="#">Links são exemplos de inline level</a>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(208, 208, 208);
+    }
+/*
+SELETORES PERSONALIZADOS
+# = id
+. = class
+: = pseudo-class
+:: = pseudo-elements
+> = clildren
+*/
+    a {
+      text-decoration: none;
+      text-align: left;
+      font-style: italic;
+      font-weight: bold;
+      color: brown;
+    }
+
+    a:visited {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: blue;
+    }
+
+    a:active {
+      color: red;
+    }
+
+    .diferente {
+      background-color: aqua;
+    }
+
+    .diferente::before {
+      content: ' ⇒ ';
+    }
+
+    .diferente::after {
+      content: ' ⇐ ';
+    }
+  </style>
+</head>
+
+<body>
+  <h1>decorando links</h1>
+  <h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit aliquid alias fuga perferendis eaque quisquam
+      obcaecati rem consectetur sed dolor dolorem, eius ipsa laudantium, voluptatibus possimus a! Repellat, eaque
+      nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deserunt molestias aliquam nobis nemo quo
+      porro quod cum totam modi. Repudiandae at ullam ratione doloribus adipisci consectetur, possimus quas pariatur!
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat atque similique velit saepe excepturi a natus
+      asperiores eos vitae animi non laboriosam laborum repellendus maiores eaque soluta, ratione corrupti facilis?</p>
+  </h2>
+  <ul>
+    <li><a href="https://x.com/riobiss" target="_blank" rel="external" class="diferente">Twitter do Rio</a></li>
+    <li><a href="https://br.pinterest.com/Riobiss/" target="_blank" rel="external">Pinterest do Rio</a></li>
+    <li><a href="https://www.instagram.com/riobiss/" target="_blank" rel="external">Instagram do Rio</a></li>
+  </ul>
+</body>
+
+</html>
